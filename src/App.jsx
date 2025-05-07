@@ -5,24 +5,21 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LayOut from "./Components/LayOut/LayOut";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  let routes = createBrowserRouter([
-    {
-      path: "",
-      element: <LayOut />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "about", element: <About /> },
-        { path: "portfolio", element: <Portfolio /> },
-        { path: "contact", element: <Contact /> },
-      ],
-    },
-  ]);
-
-  return <RouterProvider router={routes}></RouterProvider>;
+  return (
+    <HashRouter>
+      <LayOut />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </HashRouter>
+  );
 }
 
 export default App;
