@@ -6,17 +6,19 @@ import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
 import LayOut from "./Components/LayOut/LayOut";
+
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <HashRouter>
-      <LayOut />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<LayOut />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       </Routes>
     </HashRouter>
   );
