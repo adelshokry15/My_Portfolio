@@ -1,0 +1,26 @@
+.home-bg {
+  background-color: #1abc9c;
+}
+.hero img {
+  width: 250px;
+}
+.hero h3::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero span {
+  width: 40px;
+  height: 40px;
+}
+.fa-pos {
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

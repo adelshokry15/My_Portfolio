@@ -1,0 +1,28 @@
+.about,
+.about span {
+  background-color: #1abc9c;
+}
+.about-body h3 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.about-body h3::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about span {
+  width: 40px;
+  height: 40px;
+}
+.fa-pos {
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

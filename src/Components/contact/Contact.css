@@ -1,0 +1,58 @@
+.contact {
+  min-height: 700px;
+  margin-top: 100px !important;
+}
+.contact h3 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.contact h3::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: black;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact span {
+  width: 40px;
+  height: 40px;
+}
+.fa-pos {
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.contact .form-control {
+  border: 0;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+.contact .form-control:focus {
+  color: black;
+  border-color: rgb(150, 150, 150);
+  outline: 0;
+  box-shadow: none;
+}
+.contact button {
+  width: fit-content;
+  background-color: #1abc9c;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.contact label {
+  position: relative;
+  top: 20px;
+  color: #1abc9c;
+  transition: 0.3s;
+}
+.contact input {
+  position: relative;
+  z-index: 2;
+}
+.label-show {
+  top: 0 !important;
+}
