@@ -5,7 +5,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, BrowserRouter } from "react-router-dom";
 import LayOut from "./Components/LayOut/LayOut";
 
 function App() {
@@ -22,7 +22,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={routes}></RouterProvider>;
+  return (
+    <BrowserRouter basename="/My_Portfolio">
+      <RouterProvider router={routes}></RouterProvider>
+    </BrowserRouter>
+  );
 }
 
 export default App;
