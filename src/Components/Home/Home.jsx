@@ -11,8 +11,11 @@ export default function Home() {
           <div className="min-vh-100 d-flex justify-content-center align-items-center">
             <div className="hero text-center">
               <img className="mb-5" src={avatar} alt="" />
+              <a target="_blank" style={{color:"#2c3e50"}} className="mb-4 text-decoration-none h5 fw-bold" href="https://drive.google.com/file/d/1SlHsz9iBYVAa6WUYC9qUGvuv9W98gYuu/view?usp=drive_link" download>
+                <p>View CV</p>
+              </a>
               <h3 className="fs-1 fw-bold position-relative mb-5">
-                ADEL SHOKRY
+                Eng.ADEL SHOKRY
                 <span className="home-bg d-flex justify-content-center align-items-center position-absolute fa-pos fs-6">
                   <FontAwesomeIcon icon={faStar} />
                 </span>
